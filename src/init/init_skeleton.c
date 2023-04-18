@@ -14,7 +14,7 @@ void init_skeleton(rpg_t *rpg, entity_t *monster, VEC pos)
     monster->state = IDLE;
     monster->prev_state = IDLE;
     monster->pos = pos;
-    monster->rect = (sfFloatRect){0, 0, 48, 96};
+    monster->rect = (sfFloatRect){0, 0, 64, 150};
     monster->time = 0;
     set_animation(monster, rpg->asset->ma_skeleton.idle, 1, NULL);
     monster->jump = (jump_t){0, 0, 2, 2};
